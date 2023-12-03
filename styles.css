@@ -72,9 +72,26 @@ fieldset {
   padding: 1rem;
 }
 
+label {
+  position: relative;
+}
+
+.form-control small {
+  color: red;
+  position: absolute;
+  bottom: -40px;
+  right: 10px;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
 .form-control {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 input {

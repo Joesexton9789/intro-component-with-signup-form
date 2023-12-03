@@ -50,40 +50,73 @@
           <form action="">
             <fieldset>
               <div class="form-control">
-                <label for="first_name"></label>
-                <input
-                  type="text"
-                  name="first_name"
-                  id="first_name"
-                  placeholder="First Name"
-                />
+                <label for="first_name">
+                  <input
+                    type="text"
+                    name="first_name"
+                    id="first_name"
+                    placeholder="First Name"
+                  />
+                  <!-- <svg
+                    width="24"
+                    height="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g fill="none" fill-rule="evenodd">
+                      <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                      <rect
+                        fill="#FFF"
+                        x="11"
+                        y="6"
+                        width="2"
+                        height="9"
+                        rx="1"
+                      />
+                      <rect
+                        fill="#FFF"
+                        x="11"
+                        y="17"
+                        width="2"
+                        height="2"
+                        rx="1"
+                      />
+                    </g>
+                  </svg> -->
+                  <small hidden>First name cannot be empty</small>
+                </label>
               </div>
               <div class="form-control">
-                <label for="last_name"></label>
-                <input
-                  type="text"
-                  name="last_name"
-                  id="last_name"
-                  placeholder="Last Name"
-                />
+                <label for="last_name">
+                  <input
+                    type="text"
+                    name="last_name"
+                    id="last_name"
+                    placeholder="Last Name"
+                  />
+                  <small hidden>Last name cannot be empty</small>
+                </label>
               </div>
               <div class="form-control">
-                <label for="email"></label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Email Address"
-                />
+                <label for="email">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email Address"
+                  />
+                  <small hidden>Looks like this is not an email</small>
+                </label>
               </div>
               <div class="form-control">
-                <label for="password"></label>
-                <input
-                  type="text"
-                  name="password"
-                  id="password"
-                  placeholder="Password"
-                />
+                <label for="password">
+                  <input
+                    type="text"
+                    name="password"
+                    id="password"
+                    placeholder="Password"
+                  />
+                  <small hidden>Password cannot be empty</small>
+                </label>
               </div>
               <button class="btn" type="submit">claim your free trial</button>
             </fieldset>

@@ -8,47 +8,14 @@ const password = document.getElementById('password')
 function showError(value, message) {
   const label = value.parentElement
   const small = label.querySelector('small')
-  const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg')
-  const svgPath = document.createElementNS('http://www.w3.org/2000/svg', 'path')
+  const icon = label.querySelector('img')
 
-  svg.setAttribute('width', '24')
-  svg.setAttribute('height', '24')
-
-  svg.innerHTML = `
-  <g fill="none" fill-rule="evenodd">
-  <circle fill="#FF7979" cx="12" cy="12" r="12" />
-  <rect
-    fill="#FFF"
-    x="11"
-    y="6"
-    width="2"
-    height="9"
-    rx="1"
-  />
-  <rect
-    fill="#FFF"
-    x="11"
-    y="17"
-    width="2"
-    height="2"
-    rx="1"
-  />
-</g>
-  `
-
-  svg.appendChild(svgPath)
   if (value.value === '') {
     small.innerText = message
-
-    value.insertAdjacentElement('afterend', svg)
-    value.style.borderColor = 'red'
-  }
-
-  if (value.value !== '') {
+    icon.style.display = 'block'
+  } else {
     small.innerText = ''
-
-    value.nextElementSibling.remove(svg)
-    value.style.borderColor = 'hsl(246, 25%, 77%)'
+    icon.style.display = 'none'
   }
 }
 

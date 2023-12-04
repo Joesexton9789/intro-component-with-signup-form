@@ -83,8 +83,9 @@ label {
   right: 10px;
 }
 
-svg {
+img {
   position: absolute;
+  display: none;
   top: 0;
   right: 20px;
 }

@@ -9,13 +9,16 @@ function showError(value, message) {
   const label = value.parentElement
   const small = label.querySelector('small')
   const icon = label.querySelector('img')
+  const input = label.querySelector('input')
 
   if (value.value === '') {
     small.innerText = message
     icon.style.display = 'block'
+    input.style.borderColor = 'red'
   } else {
     small.innerText = ''
     icon.style.display = 'none'
+    input.style.borderColor = 'hsl(246, 25%, 77%)'
   }
 }
 
